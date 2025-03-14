@@ -38,7 +38,7 @@ This project implements a microcontroller-based autonomous gate system for pedes
 
 ## How It Works
 1. **Entry Process:**
-   - User sends an entry command via Bluetooth or presses the entry button.
+   - User sends an entry command via Bluetooth.
    - The system checks if the max capacity is reached.
    - If space is available, the gate opens, the count increases, and the LCD updates.
    - If full, the gate remains closed, and a message is displayed.
@@ -46,7 +46,7 @@ This project implements a microcontroller-based autonomous gate system for pedes
 2. **Exit Process:**
    - User sends an exit command via Bluetooth or presses the exit button.
    - If users are inside, the gate opens, the count decreases, and the LCD updates.
-   - If no one is inside, the system displays a "No Exit" message.
+   - If no one is inside, the system displays a "Empty" message.
 
 3. **Emergency Mode:**
    - Pressing the emergency button forces the gate open.
